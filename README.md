@@ -29,14 +29,14 @@ ORES, Objective Revision Evaluation Service ([documentation](https://www.mediawi
       | article_quality        | string    |
       | population             | integer   |
 
-3. Data analysis: read the csv file, analyzed and visualized the article quality data. There are a series of visualizations that show: the countries with the greatest and least coverage of politicians on Wikipedia compared to their population and the countries with the highest and lowest proportion of high quality articles on politicians.  
+3. Data analysis: read the csv file, analyzed and visualized the article quality data. There are a series of visualizations in png format that show: the countries with the greatest and least coverage of politicians on Wikipedia compared to their population and the countries with the highest and lowest proportion of high quality articles on politicians.  
     * HighestArticleQaulity.png
     * HighestCountryArticlebyPopulation.png
     * LowestCountryArticlebyPopulation.png
    
    Results and Discussion:
-    * I performed analysis on how the coverage of politicians on Wikipedia and the quality of 
-    * eee
+    a. I performed analysis on how the coverage of politicians on Wikipedia and the quality of 
+    b. eee
 
 ### Organization of the project
 
@@ -45,12 +45,12 @@ The project has the following structure:
 ```
 TrafficAnalysisEnglishWikipedia/
   |- JSON_Data/
-     |- 0.json
-     |- 1.json 
-     |- 2.json
-     |- 3.json
+     |- ORES_quality_data_0.json
+     |- ORES_quality_data_1.json 
+     |- ORES_quality_data_2.json
+     |- ORES_quality_data_3.json
      ...
-     |- 959.json
+     |- ORES_quality_data_943.json
   |- LICENSE
   |- BiasAnalysis.ipynb
   |- HighestArticleQaulity.png
