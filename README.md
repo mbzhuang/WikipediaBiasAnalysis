@@ -21,22 +21,19 @@ Both are licensed under the [CC-BY-SA 3.0](https://creativecommons.org/licenses/
 
 I combined a dataset of Wikipedia articles with a dataset of country populations, and use a machine learning service called Objective Revision Evaluation Service (ORES) to estimate the quality of each article. rtion of high quality articles about politicians.
     
-2. Data processing: read the JSON files and process the raw data into a final csv file, en-wikipedia_traffic_200801-201709.csv
+2. Data processing: read the JSON files and process the raw data into a final csv file, bias_analysis_processed_data.csv
   
       The final csv file has 8 columns:
 
-      | Column                 | Value     | 
+      | Column                 | Data Type | 
       | -----------------------|:---------:| 
-      | year                   | YYYY      |
-      | month                  | MM        | 
-      | pagecount_all_views    | num_views |
-      | pagecount_desktop_views| num_views |
-      | pagecount_mobile_views | num_views |
-      | pageview_all_views     | num_views |
-      | pageview_desktop_views | num_views |
-      | pageview_mobile_views  | num_views |
-  
-3. Data analysis: read the csv file, analyze and visualize the traffic data, PageviwPlot.png.
+      | country                | string    |
+      | article_name           | string    | 
+      | revision_id            | integer   |
+      | article_quality        | string    |
+      | population             | integer   |
+
+3. Data analysis: read the csv file, analyze and visualize the article quality data.
 
 I performed analysis on how the coverage of politicians on Wikipedia and the quality of articles about politicians varies between countries.
 There will be a series of visualizations that show: the countries with the greatest and least coverage of politicians on Wikipedia compared to their population and the countries with the highest and lowest propo
@@ -48,16 +45,21 @@ The project has the following structure:
 ```
 TrafficAnalysisEnglishWikipedia/
   |- JSON_Data/
-     |- pagecounts_desktop-site_200801-201607.json
-     |- pagecounts_mobile-site_200801-201607.json 
-     |- pageviews_desktop-site_201507-201709.json
-     |- pageviews_mobile-web_201507-201709.json
-     |- pageviews_mobile-app_201507-201709.json
+     |- 0.json
+     |- 1.json 
+     |- 2.json
+     |- 3.json
+     ...
+     |- 959.json
   |- LICENSE
-  |- PageviewAnalysis.ipynb
-  |- PageviewPlot.png
+  |- BiasAnalysis.ipynb
+  |- HighestArticleQaulity.png
+  |- HighestCountryArticlebyPopulation.png
+  |- LowestCountryArticlebyPopulation.png
   |- README.md
-  |- en-wikipedia_traffic_200801-201709.csv
+  |- page_data.csv
+  |- Population Mid-2015.csv
+  |- bias_analysis_processed_data.csv
 ```
 *This is an assignment for Data 512, University of Washington.
 
