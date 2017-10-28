@@ -15,7 +15,7 @@ ORES, Objective Revision Evaluation Service ([documentation](https://www.mediawi
 ### Steps of the project
 *Find the steps in BiasAnalysis.ipynb
 
-1. Data acquisition: combined a [dataset of Wikipedia articles with a dataset of country populations](https://figshare.com/articles/Untitled_Item/5513449) (csv file read into dataframe) and used a machine learning service called Objective Revision Evaluation Service (ORES) to estimate the quality of each article. The data of article quality are saved in JSON_Data folder, loaded from the folder, and then saved into a dataframe. The population data is on the [Population Research Bureau website](http://www.prb.org/DataFinder/Topic/Rankings.aspx?ind=14) (csv file read into a dataframe).
+1. Data acquisition: combined a [dataset of Wikipedia articles with a dataset of country populations](https://figshare.com/articles/Untitled_Item/5513449) (page_data.csv, csv file read into dataframe) and used a machine learning service called Objective Revision Evaluation Service (ORES) to estimate the quality of each article. The data of article quality are saved in JSON_Data folder, loaded from the folder, and then saved into a dataframe. The population data is on the [Population Research Bureau website](http://www.prb.org/DataFinder/Topic/Rankings.aspx?ind=14) (Population Mid-2015.csv, csv file read into a dataframe).
     
 2. Data processing: merged the three dataframes and process the final data into a csv file, bias_analysis_processed_data.csv
   
@@ -35,7 +35,9 @@ ORES, Objective Revision Evaluation Service ([documentation](https://www.mediawi
     * LowestCountryArticlebyPopulation.png
    
    Results and Discussion:
+   
     a. I performed analysis on how the coverage of politicians on Wikipedia and the quality of 
+    
     b. eee
 
 ### Organization of the project
