@@ -6,22 +6,18 @@ The goal of this project is to explore the concept of 'bias' through analyzing d
 ### License of source data
 #### API
 
-Pagecounts API ([documentation](https://wikitech.wikimedia.org/wiki/Analytics/AQS/Legacy_Pagecounts), [endpoint](https://wikimedia.org/api/rest_v1/#!/Pagecounts_data_(legacy)/get_metrics_legacy_pagecounts_aggregate_project_access_site_granularity_start_end)) provides access to desktop and mobile traffic data from January 2008 through July 2016.
-
-Pageviews API ([documentation](https://wikitech.wikimedia.org/wiki/Analytics/AQS/Pageviews), [endpoint](https://wikimedia.org/api/rest_v1/#!/Pageviews_data/get_metrics_pageviews_aggregate_project_access_agent_granularity_start_end)) provides access to desktop, mobile web, and mobile app traffic data from July 2015 through September 2017.
-
-Both are licensed under the [CC-BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) and [GFDL](https://www.gnu.org/copyleft/fdl.html) licenses.
+ORES, Objective Revision Evaluation Service ([documentation](https://www.mediawiki.org/wiki/ORES), [endpoint](https://ores.wikimedia.org/v3/scores/{project}/?models={model}&revids={revids})) provides machine learning as a service that generates content quality data for Wikipedia projects.
 
 #### Wikimedia's [Terms of Use](https://wikimediafoundation.org/wiki/Terms_of_Use) and [Privacy Policy](https://wikimediafoundation.org/wiki/Privacy_policy)
+
+#### Population Reference Bureau's [Privacy Policy](http://www.prb.org/DataFinder/Topic/~/link.aspx?_id=11A2A1677D184053936CE705FAEDEC1D&_z=z)
 
 ### Steps of the project
 *Find the steps in BiasAnalysis.ipynb
 
-1. Data acquisition: retrieve raw datasets from Pagecount API and Pageview API and save them as JSON files in the JSON_Data folder. Note that Pageview API excludes spiders/crawlers, while data from the Pagecounts API does not.
-
-I combined a dataset of Wikipedia articles with a dataset of country populations, and use a machine learning service called Objective Revision Evaluation Service (ORES) to estimate the quality of each article. rtion of high quality articles about politicians.
+1. Data acquisition: combined a [dataset of Wikipedia articles with a dataset of country populations](https://figshare.com/articles/Untitled_Item/5513449) (csv file read into dataframe) and used a machine learning service called Objective Revision Evaluation Service (ORES) to estimate the quality of each article. The data of article quality are saved in JSON_Data folder, loaded from the folder, and then saved into a dataframe. The population data is on the [Population Research Bureau website](http://www.prb.org/DataFinder/Topic/Rankings.aspx?ind=14) (csv file read into a dataframe).
     
-2. Data processing: read the JSON files and process the raw data into a final csv file, bias_analysis_processed_data.csv
+2. Data processing: merged the three dataframes and process the final data into a csv file, bias_analysis_processed_data.csv
   
       The final csv file has 8 columns:
 
@@ -33,10 +29,14 @@ I combined a dataset of Wikipedia articles with a dataset of country populations
       | article_quality        | string    |
       | population             | integer   |
 
-3. Data analysis: read the csv file, analyze and visualize the article quality data.
-
-I performed analysis on how the coverage of politicians on Wikipedia and the quality of articles about politicians varies between countries.
-There will be a series of visualizations that show: the countries with the greatest and least coverage of politicians on Wikipedia compared to their population and the countries with the highest and lowest propo
+3. Data analysis: read the csv file, analyzed and visualized the article quality data. There are a series of visualizations that show: the countries with the greatest and least coverage of politicians on Wikipedia compared to their population and the countries with the highest and lowest proportion of high quality articles on politicians.  
+    * HighestArticleQaulity.png
+    * HighestCountryArticlebyPopulation.png
+    * LowestCountryArticlebyPopulation.png
+   
+   Results and Discussion:
+    * I performed analysis on how the coverage of politicians on Wikipedia and the quality of 
+    * eee
 
 ### Organization of the project
 
