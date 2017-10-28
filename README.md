@@ -1,7 +1,7 @@
 # Wikipedia Bias Analysis
 
 ### About the project
-The goal of this project is to construct, analyze, and publish a dataset of monthly traffic on English Wikipedia from Jan 1st, 2008 through Sep 30th, 2017. Wikipedia traffic from two different Wikimedia REST API endpoints are acquired through their respective API, combined into a single dataset, and finally visualized to show both the mobile and main site traffic change from 2008 to 2017.
+The goal of this project is to explore the concept of 'bias' through analyzing data on Wikipedia articles, which are on politicians from a variety of countries. By analyzing the existence and quality of these political articles, we are expecting to have a deeper understanding of Wikipedia's content.
 
 ### License of source data
 #### API
@@ -15,9 +15,11 @@ Both are licensed under the [CC-BY-SA 3.0](https://creativecommons.org/licenses/
 #### Wikimedia's [Terms of Use](https://wikimediafoundation.org/wiki/Terms_of_Use) and [Privacy Policy](https://wikimediafoundation.org/wiki/Privacy_policy)
 
 ### Steps of the project
-*Find the steps in PageviewAnalysis.ipynb
+*Find the steps in BiasAnalysis.ipynb
 
 1. Data acquisition: retrieve raw datasets from Pagecount API and Pageview API and save them as JSON files in the JSON_Data folder. Note that Pageview API excludes spiders/crawlers, while data from the Pagecounts API does not.
+
+I combined a dataset of Wikipedia articles with a dataset of country populations, and use a machine learning service called Objective Revision Evaluation Service (ORES) to estimate the quality of each article. rtion of high quality articles about politicians.
     
 2. Data processing: read the JSON files and process the raw data into a final csv file, en-wikipedia_traffic_200801-201709.csv
   
@@ -35,6 +37,9 @@ Both are licensed under the [CC-BY-SA 3.0](https://creativecommons.org/licenses/
       | pageview_mobile_views  | num_views |
   
 3. Data analysis: read the csv file, analyze and visualize the traffic data, PageviwPlot.png.
+
+I performed analysis on how the coverage of politicians on Wikipedia and the quality of articles about politicians varies between countries.
+There will be a series of visualizations that show: the countries with the greatest and least coverage of politicians on Wikipedia compared to their population and the countries with the highest and lowest propo
 
 ### Organization of the project
 
