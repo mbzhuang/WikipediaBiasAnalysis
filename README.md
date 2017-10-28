@@ -34,11 +34,11 @@ ORES, Objective Revision Evaluation Service ([documentation](https://www.mediawi
     * HighestCountryArticlebyPopulation.png
     * LowestCountryArticlebyPopulation.png
    
-   Results and Discussion:
+### Results and Discussion:
    
-    a. I performed analysis on how the coverage of politicians on Wikipedia and the quality of 
+1. I performed analysis on how the coverage of politicians on Wikipedia and the quality of 
     
-    b. eee
+2. eee
 
 ### Organization of the project
 
