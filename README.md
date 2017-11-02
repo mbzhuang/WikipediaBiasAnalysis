@@ -38,9 +38,11 @@ ORES, Objective Revision Evaluation Service ([documentation](https://www.mediawi
    
 1. The countries with the greatest and least coverage of politicians on Wikipedia compared to their population
 
-Most countries appear on top of the list in terms of number of articles divided by population are the countries of least population. Similarly, most countries on the bottom of the list in terms of number of articles divided by population are the countries of highest population, for instance, China, India, Indonesia, and Bangladesh. Not a lot information 
+    Most countries appear on top of the list in terms of number of articles divided by population are the countries of least population. Similarly, most countries on the bottom of the list in terms of number of articles divided by population are the countries of highest population, for instance, China, India, Indonesia, and Bangladesh. Given the above findings, I found this analysis is not as informative as expected. 
     
 2. The countries with the highest and lowest proportion of high quality articles about politicians.
+
+    The top 10 countries with highest proportion of high quality articles are: North Korea, Romania, Saudi Arabia, Central African Republic, Qatar, Guinea-Bissau, Vietnam, Bhutan, Ireland, and United States. The most interesting finding is that North Korea being on the very top of this list. While for the countries with poorer articles quality, there are more than 10 countries having 0% of FA and GA level articles.
 
 ### Organization of the project
 
