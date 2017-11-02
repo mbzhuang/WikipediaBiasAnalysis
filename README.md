@@ -34,7 +34,7 @@ ORES, Objective Revision Evaluation Service ([documentation](https://www.mediawi
     * HighestCountryArticlebyPopulation.png
     * LowestCountryArticlebyPopulation.png
    
-### Results and Discussion
+### Results and discussion
    
 1. The countries with the greatest and least coverage of politicians on Wikipedia compared to their population
 
