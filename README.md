@@ -36,9 +36,11 @@ ORES, Objective Revision Evaluation Service ([documentation](https://www.mediawi
    
 ### Results and Discussion:
    
-1. I performed analysis on how the coverage of politicians on Wikipedia and the quality of 
+1. The countries with the greatest and least coverage of politicians on Wikipedia compared to their population
+
+Most countries appear on top of the list in terms of number of articles divided by population are the countries of least population. Similarly, most countries on the bottom of the list in terms of number of articles divided by population are the countries of highest population, for instance, China, India, Indonesia, and Bangladesh. Not a lot information 
     
-2. eee
+2. The countries with the highest and lowest proportion of high quality articles about politicians.
 
 ### Organization of the project
 
