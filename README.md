@@ -19,7 +19,7 @@ ORES, Objective Revision Evaluation Service ([documentation](https://www.mediawi
     
 2. Data processing: merged the three dataframes and process the final data into a csv file, bias_analysis_processed_data.csv
   
-      The final csv file has 8 columns:
+      The final csv file has 5 columns:
 
       | Column                 | Data Type | 
       | -----------------------|:---------:| 
